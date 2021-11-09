@@ -1,7 +1,11 @@
 {
-  "name": "forta-agent-starter",
+  "name": "aave-ex-rate-agent",
   "version": "0.0.1",
-  "description": "Forta Agent Typescript starter project",
+  "description": "Forta Agent that checks for deviation in exchange rates for a configurable pair of tokens.",
+  "author": {
+    "email": "mihai.mascas@cardoplus.ro",
+    "name": "Mihai Mascas"
+  },
   "scripts": {
     "build": "tsc",
     "start": "npm run start:dev",
@@ -20,11 +24,15 @@
   },
   "dependencies": {
     "bignumber.js": "^9.0.1",
-    "forta-agent": "^0.0.29"
+    "dotenv": "^10.0.0",
+    "forta-agent": "^0.0.29",
+    "web3": "^1.6.0"
   },
   "devDependencies": {
     "@types/jest": "^27.0.1",
     "@types/nodemon": "^1.19.0",
+    "@types/web3": "^1.2.2",
+    "@types/web3-eth-abi": "^1.2.2",
     "jest": "^27.0.6",
     "nodemon": "^2.0.8",
     "ts-jest": "^27.0.3",
